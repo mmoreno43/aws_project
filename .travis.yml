@@ -10,4 +10,7 @@
   bucket: mmoreno23.net
   # Prevent Travis from deleting your built site so it can be uploaded.
   skip_cleanup: true
-  region: $AWS_DEFAULT REGION
+  region: $AWS_DEFAULT_REGION
+  on:
+    branch: master
+    

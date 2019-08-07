@@ -1,7 +1,0 @@
-deploy:
-  provider: s3
-  access_key_id: "AKIAJHBC4YLZNLIYKMAA"
-  secret_access_key: "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"
-  bucket: "mmoreno23.net"
-  skip_cleanup: true
-  region: US East

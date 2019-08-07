@@ -1,8 +1,8 @@
-  language: node_js
-  node_js:
-  - 9
+  language: python
+  python:
+  - "3.7"
   install:
-    - pip install --user aws cli
+    - pip install awscli
   script: exit 0 
   deploy:
   # Control deployment by setting a value for `on`. Setting the `branch`

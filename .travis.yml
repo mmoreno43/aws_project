@@ -1,4 +1,7 @@
-deploy:
+language: python
+python:
+  - "3.7"
+  deploy:
   # Control deployment by setting a value for `on`. Setting the `branch`
   # option to `master` means Travis will only attempt a deployment on
   # builds of your repo's master branch (e.g., after you merge a PR).

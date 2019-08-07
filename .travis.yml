@@ -1,3 +1,6 @@
+  language: node_js
+  node_js:
+  - 9
   install:
     - pip install --user aws cli
   script: exit 0 

@@ -1,15 +1,7 @@
-language: node_js
-node_js:
-  - "stable"
-cache:
-  directories:
-  - node_modules
-script:
-  - npm run build
 deploy:
-  provider: pages
+  provider: s3
+  access_key_id: "AKIAJHBC4YLZNLIYKMAA"
+  secret_access_key: "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"
+  bucket: "mmoreno23.net"
   skip_cleanup: true
-  github_token: $github_token
-  local_dir: build
-  on:
-    branch: master
+  region: US East

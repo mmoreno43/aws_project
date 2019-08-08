@@ -2,7 +2,8 @@ language: node_js
 node_js:
   - node
 deploy:
-provider: s3
-access_key_id: $AWS_ACCESS_KEY_ID
-secret_access_key: $AWS_SECRET_ACCESS_KEY
-bucket: mmoreno23.net 
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: mmoreno23.net 
+  acl: public_read

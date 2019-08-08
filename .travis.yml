@@ -1,21 +1,15 @@
-language: python
-  python:
-  - "3.7"
-  install:
-    - pip install awscli
-  script: 
-  deploy:
-  # Control deployment by setting a value for `on`. Setting the `branch`
-  # option to `master` means Travis will only attempt a deployment on
-  # builds of your repo's master branch (e.g., after you merge a PR).
+language: node_js
+node_js:
+- 9
+install:
+  - pip install --user awscli
+script: exit 0
+deploy:
   provider: s3
-  # You can refer to environment variables from Travis repo settings!
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
-  # Name of the S3 bucket to which your site should be uploaded.
-  bucket: mmoreno23.net
-  local-dir: public
-  # Prevent Travis from deleting your built site so it can be uploaded.
+  bucket: www.mmoreno23.net 
+  local-dir: ./
   skip_cleanup: true
   region: $AWS_DEFAULT_REGION
   on:

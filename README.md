@@ -65,7 +65,7 @@ Time to copy your public key and link it to your GitHub.
 
 First, we need to copy your public key. 
 
-.. warning:: **Warning do not copy your private key!**
+.. warning: : **Warning do not copy your private key!**
 
 ```
 cat .ssh/github_key.pub

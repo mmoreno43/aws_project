@@ -101,9 +101,11 @@ mkdir aws_project
 
 What we are doing is creating a directory called aws_project. 
 
-Next, we need to intialize the project by:
+Let's first change directories to our aws_project and then we will initalize the directory.
 
 ```
+cd aws_project
+
 git init
 ```
 
@@ -115,25 +117,6 @@ git config --global user.name <username>
 git config --list
 ```
 We need to add an HTML file in your git so that users can see text on your website.
-
-First, we need to create an HTML file. We need to make sure that we are in the directory we created called aws_project.
-
-```
-pwd
-```
-
-pwd is an effective command if a user is lost. It simply outputs where they are at.
-
-If you are not in the directory then lets get you there.
-
-```
-cd
-cd aws_project
-```
-
-THe first line will take you home and the next command will change your directory to aws_project,
-
-Now that we are in the directory, lets create our file where your code will be displayed on your site.
 
 ```
 touch index.html

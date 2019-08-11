@@ -167,10 +167,9 @@ After, we will run:
 ```
 git commit -m "inital push"
 ```
+We have just moved the files to being commited. We use the "-m" to add a commit message.
 
-Now, we move the files to being commited. We use the "-m" to add a commit message.
-
-We will now need to add the remote repository (Github) and sync the folder you've create on your local disk (origin) to the remote master  by the following:
+We will now need to add the remote repository (Github) and sync the folder you've created on your local disk (origin) to the remote master by the following:
 
 ```
 git push -u git@github.com:<yourusername>/aws_project.git master

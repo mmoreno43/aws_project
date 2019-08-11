@@ -184,9 +184,9 @@ First, let's login into your [AWS account](https://aws.amazon.com) or create one
 
 ## Register a Domain
 
-We first need to click on Route 53 in under the "Services" tab. 
+We first need to click on **Route 53** in under the **Services** tab. 
 
-Now that you are in the Route 53 dashboard you will see a header called "Register domain". Enter the domain name you wish to have. For extra money you can choose different endings and click "Check" to see if it is available. 
+Now, that you are in the Route 53 dashboard you will see a header called **Register domain**. Enter the domain name you wish to have. For extra money you can choose different endings and click **Check** to see if it is available. 
 
 If available you will add to cart and follow the prompts to purchase the domain name. 
 
@@ -196,8 +196,8 @@ First we will create two new S3 buckets.
 
 The two buckets we will create have to match your domain name that you purchased. For example, if your domain name is example.com then your buckets will be: 
 
-*example.com
-*www.example.com
+* example.com
+* www.example.com
 
 ### So how do I create an S3 Bucket?
 

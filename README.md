@@ -124,7 +124,7 @@ touch index.html
 
 Touch will create a file within your aws_project called index.html
 
-We now need to get into the html file we create so we can input code for our website.
+We now need to get into the html file we created so we can add code for our website.
 
 ```
 vim index.html

@@ -1,11 +1,11 @@
 # Setting up a Static Website Using a Custom Domain 
 
 
-Suppose that you want to host your static website on Amazon S3. You registred a domain (for exampled my domain.com), and you want requests to be served from your Amazon S3 content. Whether you have an existing static website that you want to host on Amazon S3,o or you are starting from, use this example to learn how to host websites on Amazon S3. We will be using GitHub to upload our code to and from there we will link our your Travis CI account to automate the push to Amazon S3.
+Suppose that you want to host your static website on Amazon S3. You registred a domain (for exampled my domain.com), and you want requests to be served from your Amazon S3 content. Whether you have an existing static website that you want to host on Amazon S3, or you are starting from the beginning, use this example to learn how to host websites on Amazon S3. We will be using GitHub to upload our code. From there we will link our your Travis CI account to automate the push to Amazon S3.
 
 *Note that you still do this without a custom domain. 
 
-Why S3? S3 is a great tool on AWS where not only is it being used for storage, but hosting static sites. With static sites people can host websites to present their portfolio, blogs, anything they want. Since it is inexpensive it is an amazing tool. 
+Why S3? S3 is a great tool on AWS where not only is it being used for storage, but hosting static sites. With static sites people can host websites to present their portfolio, blogs, anything they want. Since it is inexpensive and an amazing tool. 
 
 ## Before you Begin
 
@@ -17,9 +17,9 @@ As you follow the steps in this example, you will work with the following servic
 
 **GitHub** - Github is a code hosting platform for collaboration and version control. GitHub lets you and others work together on problems and work towards a common goal while learning from eachother. 
 
-**IAM**
+**IAM** - Identity and access management is used to grant or deny access to users to keep applications secure.
 
-**Linux**
+**Linux** - Linux is a well known open source OS. Today, many devices run Linux. 
 
 **TravisCI** - Travis CI is a hosted continuous intergration service used to build and test software projects hosted at GitHub. 
 
@@ -34,8 +34,8 @@ ssh-keygen-t rsa -b 2048
 ```
 
 The above command would produce two files:
-    github_key
-    github_key.pub
+    + github_key
+    + github_key.pub
 
 Let's check to see if the keys are there by running the following:
 

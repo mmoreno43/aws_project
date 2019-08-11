@@ -149,9 +149,9 @@ This reads that the Title of the page will read "My Website Home Page" and you w
 After, we have pasted the text into the file we need to save the file and quit by the following commands:
 
 ```
-hit <esc>
- 
-type :wq
+press   <esc>
+
+type    :wq 
 ```
 
 Now lets, do our inital push to Github.

@@ -73,14 +73,18 @@ cat .ssh/github_key.pub
 
 Second, copy the output.
 
-Lastly, got to [GitHub](https://github.com/) and create an account or login. Once that is done you will upload your keys to. Click on the icon in the top right, then settings. On the left hand side you should see SSH keys. Follow the prompts to enter your keys. 
+Lastly, got to [GitHub](https://github.com/) and create an account or login. Once that is done we will upload your keys. 
+
+Click on the icon in the top right, then **Settings**. 
+
+On the left hand side you should see **SSH keys**. Follow the prompts to enter your keys. 
 
 # Setting up your Git Repository
 
 First, we need to  test our SSH key with Github:
 
 ```
-ssh -T git@gitlab.com
+ssh -T git@github.com
 ```
 
 If succesful we need to make our directory. In your terminal make sure you are home by running the command:

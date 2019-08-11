@@ -207,33 +207,35 @@ The two buckets we will create have to match your domain name that you purchased
 
 ### So how do I create an S3 Bucket?
 
-Once logged into AWS console we will click on the "services" tab and click on S3.
+Once logged into AWS console we will click on the **Services** tab and click on **S3**.
 
-Next, we will click "Create Bucket". 
+Next, we will click **Create Bucket**. 
 
-On the bucket Name and region page, type the name of your domain name and click "Create".
+On the bucket **Name and region page**, type the name of your domain name and click **Create**.
 
 We will follow the same step as above but we will be creating another one for your subdomain.
 
-Lets now upload the index.html file into the S3 bucket called "example.com". 
+Lets now upload the **index.html** file into the S3 bucket called **example.com**. 
 
-You will host your content out of the root domain bucket (example.com), and you will redirect requests for "www.example.com" to the root domain bucket. You can store content in either bucket. For this example, you host content in the "example.com" bucket. The content can be text files, photos, videos—whatever you want. If you have not yet created a website, then you only need one file for this example. You can upload any file. 
+You will host your content out of the root domain bucket (example.com), and you will redirect requests for "www.example.com" to the root domain bucket. You can store content in either bucket. For this example, you host content in the "example.com" bucket. The content can be text files, photos, videos—whatever you want. 
 
 ### Upload HTML file to bucket
 
-For this example, we will upload the file "index.html" file we created in our aws_project. We will do this now to make sure that when we complete the the AWS portion that we can see our website. 
+For this example, we will upload the file **index.html** file we created in our aws_project. We will do this now to make sure that when we complete the the AWS portion that we can see our website. 
 
-Go to the AWS S3 console
+Go to the **AWS S3 console**.
 
-Click on "example.com" bucket. 
+Click on **example.com** bucket. 
 
 Click on **Upload**.
 
-Add the index.html file.
+Add the **index.html** file.
 
 Click **Upload**.
 
-To host a website, your bucket must have public read access. It is intentional that everyone in the world will have read access to this bucket. To grant public read access, attach the following bucket policy to the example.com bucket, substituting the name of your bucket for example.com.
+### Configure Buckets for Website Hosting
+
+To host a website, your bucket must have public read access and also must be configured to host a website. It is intentional that everyone in the world will have read access to this bucket. To grant public read access, attach the following bucket policy to the example.com bucket, substituting the name of your bucket for example.com.
 
 ```
 {
@@ -254,27 +256,27 @@ To host a website, your bucket must have public read access. It is intentional t
 }
 ```
 
-To attach the policy click on the bucket and the click on tab labled "Permissions". 
+To attach the policy click on the **example.com** bucket and then click on the tab labled **Permissions**. 
 
-Within that tab you will see "Bucket Policy" where you will attach the above policy. 
+Within that tab you will see **Bucket Policy** where you will attach the above policy. 
 
-### Configure Buckets for Website Hosting
+#### Setting up Static Website Hosting
 
-In the **Bucket name** list, choose the name of the bucket that you want to enable static website hosting for. In this example, we will be using the example.com bucket.
+In the **Bucket name** list, choose the name of the bucket that you want to enable static website hosting for. In this example, we will be using the **example.com** bucket.
 
 Choose **Properties**.
 
 Choose **Static website hosting**
 
-Configure the example.com bucket for website hosting. In the **Index Document** box, type the name that you gave your index page. THis is the name we created in our aws_project which should simply be index.html. 
+Configure the **example.com** bucket for website hosting. In the **Index Document** box, type the name that you gave your index page. This is the name we created in our aws_project which should be **index.html**. 
 
-Choose **Save**.
+Click **Save**.
 
-### Configure Your Website Redirect 
+#### Configure Your Website Redirect 
 
-Now that you have configured your bucket for website hosting, configure the "www.example.com" bucket to redirect all requests for "www.example.com" to "example.com".
+Now that you have configured your bucket for website hosting, we need to configure the **www.example.com** bucket to redirect all requests for "www.example.com" to "example.com".
 
-In the Amazon S3 console, in the Buckets list, choose your bucket ( www.example.com, in this example).
+In the Amazon S3 console choose the **www.example.com** bucket.
 
 Choose **Properties**.
 
@@ -282,17 +284,17 @@ Choose **Static website hosting**.
 
 Choose **Redirect requests**. In the **Target bucket or domain** box, type example.com.
 
-Choose Save.
+Click **Save**.
 
-### Add Alias Records for example.com and www.example.com
+#### Add Alias Records for example.com and www.example.com
 
 In this step, you create the alias records that you add to the hosted zone for your domain maps example.com and www.example.com to the corresponding S3 buckets. Instead of using IP addresses, the alias records use the Amazon S3 website endpoints. Amazon Route 53 maintains a mapping between the alias records and the IP addresses where the Amazon S3 buckets reside.
 
 Open the [Route 53 console](https://console.aws.amazon.com/route53/).
 
-In the list of hosted zones, choose the name of your domain.
+In the list of **hosted zones**, choose the name of your domain.
 
-Choose Create Record Set.
+Choose **Create Record Set**.
 
 Specify the following values:
 
@@ -304,15 +306,15 @@ Repeat this step to create a second record for your subdomain. For the second re
 
 **Type**
 
-Choose A – IPv4 address.
+Choose **A – IPv4 address**.
 
 **Alias**
 
-Choose Yes.
+Choose **Yes**.
 
 **Alias Target**
 
-Type the name of your Amazon S3 bucket endpoint, for example example.com (s3-website-us-west-2).
+Type the name of your Amazon S3 bucket endpoint, for example example.com (s3-website-us-east-1).
 
 **Note**
 
@@ -330,7 +332,7 @@ Choose **Create**.
 
 For www.example.com, repeat steps 3 through 5 to create a record.
 
-If done correctly, you should be able to type the your domain name into your browser and it should show see your website.
+If done correctly, you should be able to type the your domain name into your browser and you should see your website.
 
 ### IAM
 
@@ -356,7 +358,7 @@ Underneath **Add user to group** you will see **Create Policy**. We will be crea
 
 Click on the **JSON** tab. 
 
-Delete the text alredy inside that box. We will be copying and pasting the following text within the box. The following text will allow Travis CI access to our S3 bucket,but only are we allpwing it access, we are allowing it to List, Read, and Write. 
+Delete the text alredy inside that box. We will be copying and pasting the following text within the box. The following text will allow Travis CI access to our S3 bucket, allow it to List, Read, and Write in our S3 bucket. You will replace example.com with your buckets name.  
 
 ```
 {
@@ -396,25 +398,27 @@ Delete the text alredy inside that box. We will be copying and pasting the follo
 
 Name your policy **Travis_CI_Policy** and click on **Create Policy**.
 
-Go back to the previous tab and click on the "refresh" symbol. 
+Go back to the previous tab and click on the **refresh** symbol. 
 
 Type in the seach bar **Travis_CI_Policy**. 
 
 Click on the checkbox next to it.
 
-Skip **Tags** and move on to review. Click on **Create User**.
+Skip **Tags** and move on to **Review**. 
+
+Click on **Create User**.
 
 **This next step is very important, because we only get one shot to see the secret acces key.**
 
-There are a few ways we can do this. One of them being **Download .csv** file. You can copy the keys to a notepad or text file or simply use a pencil and scratch piece of paper to write them down.
+There are a few ways we can do this. One of them being downloading the **.csv** file. You can copy the keys to a notepad or text file or simply use a pencil and scratch piece of paper to write them down.
 
-For this example I will download the **.csv** file.
+For this example I will download the **.csv** file since that is the easiet. 
 
 We will input these keys for the future when we get into Travis CI. 
 
 Congrats, you've made it this far, but let's take it one step further and have Travis CI make the push from GitHub to our S3 bucket.
 
-# TravisCI
+# Travis CI
 
 To begin we need to create an account on [Travis CI](https://travis-ci.org/). Your account will be linked with your GitHub. 
 
@@ -426,7 +430,7 @@ Underneath **MY ACCOUNT** click on **Sync account**.
 
 Towards the middle of the page you should see the repository that we created. There will be a slider to the right of the repository that we need to click on to active our repository. 
 
-Once that is completed you should be able to see your branches. 
+Once that is completed you should be able to see your **branches**. 
 
 Lets head back to our terminal to create an empty .travis.yml file within your repo folder.
 
@@ -437,7 +441,7 @@ cd aws_project
 
 touch .travis.yml
 ```
-We will now vim into the new file and paste the following 
+We will now vim into the new file and paste the following: 
 
 ```
 vim .travis.yml
@@ -476,12 +480,14 @@ Within package.json file we will paste the following:
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/user/project_name.git"
+    "url": "git+https://github.com/user/aws_project.git"
   },
   "author": "your name",
   "license": "MIT"
 }
 ```
+
+**You need to replace user with the username you use on Github**.
 
 Lets jump back in to Travis CI and add our environment keys.
 
@@ -512,11 +518,39 @@ Value: will be your secret access key in your .csv file
 Branch: Master
 ```
 
-Once that is done we will attempt our first push to our S3 from just our terminal. 
+Let's jump back into our terminal and open up our index.html file.
+
+```
+vim aws_project/index.html
+```
 
 Let's add some text into our HTML file to see a change at our website.
 
-After making a change to our HTML file we will do a push.
+
+```
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>My Website Home Page</title>
+</head>
+<body>
+  <h1>Welcome to my website</h1>
+  <p>Now hosted on Amazon S3!</p>
+
+  <h2>About Me</h2>
+  <p>My name is <insertname> and I live in <City,State>!
+</body>
+</html>
+```
+
+Let's save!
+
+``` 
+press   <esc>
+
+type    :wq 
+```
+
+Once that is done we will attempt our first push to our S3 from just our terminal. 
 
 ``` 
 git add .
@@ -540,5 +574,5 @@ We should be able to see the change in Github. We can also login into Travis CI 
 
 # Conclusion 
 
-Congrats, you have officaly created an S3 bucket that is linked with your domain you registerd using Route 53. You created a user for Travis CI to upload the file to your S3 bucket when it sees the change you created in Github. 
+Congrats, you have officaly created an S3 bucket that is linked with your domain you registerd using Route 53. You created a user for Travis CI to upload the file to your S3 bucket when it sees the change you created in your Github master branch. 
 

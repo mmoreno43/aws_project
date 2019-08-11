@@ -34,8 +34,8 @@ ssh-keygen-t rsa -b 2048
 ```
 
 The above command would produce two files:
-    + github_key
-    + github_key.pub
+ + github_key
+ + github_key.pub
 
 Let's check to see if the keys are there by running the following:
 

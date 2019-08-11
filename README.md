@@ -180,7 +180,7 @@ If succesful, you should be able to login into your Github and see your project 
 # AWS
 So lets begin,
 
-First, let's login into your [AWS account](https://aws.amazon.com) or [create one](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=default&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start).
+First, let's login into your [AWS account](https://aws.amazon.com) or create one [here](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=default&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start).
 
 ## Register a Domain
 

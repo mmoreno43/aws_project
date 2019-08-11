@@ -422,6 +422,8 @@ Congrats, you've made it this far, but let's take it one step further and have T
 
 To begin we need to create an account on [Travis CI](https://travis-ci.org/). Your account will be linked with your GitHub. 
 
+## Active Repository
+
 Once the accounts are linked then we will need to active the repository. We can do this by the following:
 
 Click on the icon in the top left. 
@@ -431,6 +433,9 @@ Underneath **MY ACCOUNT** click on **Sync account**.
 Towards the middle of the page you should see the repository that we created. There will be a slider to the right of the repository that we need to click on to active our repository. 
 
 Once that is completed you should be able to see your **branches**. 
+
+
+## travis.yml
 
 Lets head back to our terminal to create an empty .travis.yml file within your repo folder.
 
@@ -458,6 +463,9 @@ deploy:
 ```
 
 What we are pasting is that we want Travis CI to run this in node because by default Travis runs in ruby. We would run into an error where ruby is looking for a "rake" file that we don't have. We then want to deploy our index.html into S3 using the keys we downloaded. We have to specify which bucket we are putting our HTML file in. By setting the acl to public read allows for public reading access. 
+
+
+## package.json
 
 Because we are running node we need to create another file within our aws_project. 
 
@@ -489,6 +497,9 @@ Within package.json file we will paste the following:
 
 **You need to replace user with the username you use on Github**.
 
+
+## Environment Keys
+
 Lets jump back in to Travis CI and add our environment keys.
 
 Login into Travis CI
@@ -517,6 +528,9 @@ Value: will be your secret access key in your .csv file
 
 Branch: Master
 ```
+
+
+## Prep for Final Push
 
 Let's jump back into our terminal and open up our index.html file.
 
@@ -549,6 +563,9 @@ press   <esc>
 
 type    :wq 
 ```
+
+
+## Final Push
 
 Once that is done we will attempt our first push to our S3 from just our terminal. 
 

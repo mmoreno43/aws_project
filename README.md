@@ -116,6 +116,9 @@ git config --global user.email <youremailhere>
 git config --global user.name <username>
 git config --list
 ```
+
+## Creating HTML file
+
 We need to add an HTML file in your git so that users can see text on your website.
 
 ```
@@ -153,6 +156,9 @@ press   <esc>
 
 type    :wq 
 ```
+
+
+## Inital Push to Github
 
 Now lets, do our inital push to Github.
 

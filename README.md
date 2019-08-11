@@ -79,7 +79,7 @@ Click on the icon in the top right, then **Settings**.
 
 On the left hand side you should see **SSH keys**. Follow the prompts to enter your keys. 
 
-# Setting up your Git Repository
+## Setting up your Git Repository
 
 First, we need to  test our SSH key with Github:
 

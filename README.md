@@ -1,7 +1,7 @@
 # Setting up a Static Website Using a Custom Domain 
 
 
-Suppose that you want to host your static website on Amazon S3. You registred a domain (for exampled my domain.com), and you want requests to be served from your Amazon S3 content. Whether you have an existing static website that you want to host on Amazon S3, or you are starting from the beginning, use this example to learn how to host websites on Amazon S3. We will be using GitHub to upload our code. From there we will link our your Travis CI account to automate the push to Amazon S3.
+Suppose that you want to host your static website on Amazon S3. You registered a domain (for exampled my domain.com), and you want requests to be served from your Amazon S3 content. Whether you have an existing static website that you want to host on Amazon S3, or you are starting from the beginning, use this example to learn how to host websites on Amazon S3. We will be using GitHub to upload our code. From there we will link our your Travis CI account to automate the push to Amazon S3.
 
 *Note that you still do this without a custom domain. 
 
@@ -15,19 +15,19 @@ As you follow the steps in this example, you will work with the following servic
 
 **Amazon S3** - You use Amazon S3 to create buckets, upload objects such as files and pictures to and configure them for people to see or host websites.
 
-**GitHub** - Github is a code hosting platform for collaboration and version control. GitHub lets you and others work together on problems and work towards a common goal while learning from eachother. 
+**GitHub** - Github is a code hosting platform for collaboration and version control. GitHub lets you and others work together on problems and work towards a common goal while learning from each other. 
 
 **IAM** - Identity and access management is used to grant or deny access to users to keep applications secure.
 
 **Linux** - Linux is a well known open source OS. Today, many devices run Linux. 
 
-**TravisCI** - Travis CI is a hosted continuous intergration service used to build and test software projects hosted at GitHub. 
+**Travis CI** - Travis CI is a hosted continuous integration service used to build and test software projects hosted at GitHub. 
 
 # SSH Key Generation
 
 To begin we need to get GitHub rolling, but before we can do that we need to create SSH keys.
 
-From a termianl screen we can generate a ssh key of type -t rsa and length (-b) 2048.
+From a terminal screen we can generate a ssh key of type -t rsa and length (-b) 2048.
 
 ```
 ssh-keygen-t rsa -b 2048
@@ -44,7 +44,7 @@ ls -la .ssh/
 ```
 # Configuring GitHub
 
-We need to associate our newly generated key to be used for Gitlab connections. I learned from a wise man (no pun intended) that by doing this we can seperate ssh keys between many sites.
+We need to associate our newly generated key to be used for Github connections. I learned from a wise man (no pun intended) that by doing this we can separate ssh keys between many sites.
 
 ```
 vim .ssh/config
@@ -87,7 +87,7 @@ First, we need to  test our SSH key with Github:
 ssh -T git@github.com
 ```
 
-If succesful we need to make our directory. In your terminal make sure you are home by running the command:
+If successful we need to make our directory. In your terminal make sure you are home by running the command:
 
 ```
 cd
@@ -101,7 +101,7 @@ mkdir aws_project
 
 What we are doing is creating a directory called aws_project. 
 
-Let's first change directories to our aws_project and then we will initalize the directory.
+Let's first change directories to our aws_project and then we will initialize the directory.
 
 ```
 cd aws_project
@@ -158,9 +158,9 @@ type    :wq
 ```
 
 
-## Inital Push to Github
+## Initial Push to Github
 
-Now lets, do our inital push to Github.
+Now lets, do our initial push to Github.
 
 ```
 git add .
@@ -171,9 +171,9 @@ What we are doing is adding everything in our directory to get ready to be pushe
 After, we will run:
 
 ```
-git commit -m "inital push"
+git commit -m "initial push"
 ```
-We have just moved the files to being commited. We use the "-m" to add a commit message.
+We have just moved the files to being committed. We use the "-m" to add a commit message.
 
 We will now need to add the remote repository (Github) and sync the folder you've created on your local disk (origin) to the remote master by the following:
 
@@ -181,7 +181,7 @@ We will now need to add the remote repository (Github) and sync the folder you'v
 git push -u git@github.com:<yourusername>/aws_project.git master
 ```
 
-If succesful, you should be able to login into your Github and see your project and your html file that you created within that project. 
+If successful, you should be able to login into your Github and see your project and your html file that you created within that project. 
 
 # AWS
 So lets begin,
@@ -256,7 +256,7 @@ To host a website, your bucket must have public read access and also must be con
 }
 ```
 
-To attach the policy click on the **example.com** bucket and then click on the tab labled **Permissions**. 
+To attach the policy click on the **example.com** bucket and then click on the tab labeled **Permissions**. 
 
 Within that tab you will see **Bucket Policy** where you will attach the above policy. 
 
@@ -336,7 +336,7 @@ If done correctly, you should be able to type the your domain name into your bro
 
 ### IAM
 
-We need to create an IAM user for Travis CI to use and delpoy our code into S3. 
+We need to create an IAM user for Travis CI to use and deploy our code into S3. 
 
 Go to AWS console.
 
@@ -358,7 +358,7 @@ Underneath **Add user to group** you will see **Create Policy**. We will be crea
 
 Click on the **JSON** tab. 
 
-Delete the text alredy inside that box. We will be copying and pasting the following text within the box. The following text will allow Travis CI access to our S3 bucket, allow it to List, Read, and Write in our S3 bucket. You will replace example.com with your buckets name.  
+Delete the text already inside that box. We will be copying and pasting the following text within the box. The following text will allow Travis CI access to our S3 bucket, allow it to List, Read, and Write in our S3 bucket. You will replace example.com with your buckets name.  
 
 ```
 {
@@ -400,7 +400,7 @@ Name your policy **Travis_CI_Policy** and click on **Create Policy**.
 
 Go back to the previous tab and click on the **refresh** symbol. 
 
-Type in the seach bar **Travis_CI_Policy**. 
+Type in the search bar **Travis_CI_Policy**. 
 
 Click on the checkbox next to it.
 
@@ -408,11 +408,11 @@ Skip **Tags** and move on to **Review**.
 
 Click on **Create User**.
 
-**This next step is very important, because we only get one shot to see the secret acces key.**
+**This next step is very important, because we only get one shot to see the secret access key.**
 
 There are a few ways we can do this. One of them being downloading the **.csv** file. You can copy the keys to a notepad or text file or simply use a pencil and scratch piece of paper to write them down.
 
-For this example I will download the **.csv** file since that is the easiet. 
+For this example I will download the **.csv** file since that is the easiest. 
 
 We will input these keys for the future when we get into Travis CI. 
 
@@ -587,9 +587,9 @@ Finally, we will do our git push with:
 git push
 ```
 
-We should be able to see the change in Github. We can also login into Travis CI and watch Travis copying the file from Github to S3. Once that is succesful we should check our S3 buckets to see the files have been added and if we go to our website we can see the that the new file has been uploaded to S3.
+We should be able to see the change in Github. We can also login into Travis CI and watch Travis copying the file from Github to S3. Once that is successful we should check our S3 buckets to see the files have been added and if we go to our website we can see the that the new file has been uploaded to S3.
 
 # Conclusion 
 
-Congrats, you have officaly created an S3 bucket that is linked with your domain you registerd using Route 53. You created a user for Travis CI to upload the file to your S3 bucket when it sees the change you created in your Github master branch. 
+Congrats, you have officially created an S3 bucket that is linked with your domain you registered using Route 53. You created a user for Travis CI to upload the file to your S3 bucket when it sees the change you created in your Github master branch. 
 

@@ -42,6 +42,10 @@ Let's check to see if the keys are there by running the following:
 ```
 ls -la .ssh/
 ```
+
+![image](https://user-images.githubusercontent.com/53852075/63071226-4c5c3900-bed3-11e9-86ed-a2bb92c879e9.png)
+
+
 # Configuring GitHub
 
 We need to associate our newly generated key to be used for Github connections. I learned from a wise man (no pun intended) that by doing this we can separate ssh keys between many sites.

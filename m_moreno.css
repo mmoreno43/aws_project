@@ -2,7 +2,6 @@
   margin-left:auto;
   margin-right:auto;
   max-width:980px;
-  max-width:1140px;
 }
 
 .top {
@@ -31,6 +30,8 @@
 
 .center{
   text-align:center!important;
+  display:inline-block;
+  width:auto;
 }
 
 .padding-64{
@@ -85,4 +86,8 @@
   padding:12px 24px!important;
 }
 
+.blue-grey{
+  color:#fff!important;
+  background-color:#607d8b!important;
+}
 /* Colors */

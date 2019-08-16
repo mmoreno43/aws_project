@@ -359,6 +359,10 @@ a{
     background-color:#ccc!important
 }
 
+.padding-large{
+    padding:12px 24px!important
+}
+
 /* Colors */
 .hover-brown:hover{
     color:#fff!important;
@@ -398,4 +402,9 @@ a{
 .dark-grey,.hover-dark-grey:hover,.dark-gray,.hover-dark-gray:hover{
     color:#fff!important;
     background-color:#616161!important
+}
+
+.teal{
+    color:#fff!important;
+    background-color:#009688!important
 }

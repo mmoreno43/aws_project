@@ -1,11 +1,88 @@
-body {
-  background-color: white
+.content {
+  margin-left:auto;
+  margin-right:auto;
+  max-width:980px;
+  max-width:1140px;
 }
 
-h1 {
-  color: blue
+.top {
+  padding:0 8px;
+  content:"";
+  display:table;
+  clear:both;
+
 }
 
-p {
-  color: red
+.half {
+  float:left;
+  width:100%;
+  width:49.99999%;
+  padding:0 8px;
 }
+
+.black{
+  color:#fff!important;
+  background-color:#000!important;
+}
+
+.container{
+  padding:0.01em 16px;
+}
+
+.center{
+  text-align:center!important;
+}
+
+.padding-64{
+  padding-top:64px!important;
+  padding-bottom:64px!important;
+}
+
+.button {
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+}
+
+.block {
+  display:block;
+  width:100%;
+}
+
+.hover-blue-grey{
+  color:#fff!important;
+  background-color:#607d8b!important;
+}
+
+.padding-16{
+  padding-top:16px!important;
+  padding-bottom:16px!important;
+}
+
+.hover-teal{
+  color:#fff!important;
+  background-color:#009688!important;
+}
+
+.hover-dark-grey{
+  color:#fff!important;
+  background-color:#616161!important;
+}
+
+.hover-brown{
+  color:#fff!important;
+  background-color:#795548!important
+}
+
+.left-align{
+  text-align:left!important;
+}
+
+.padding-large{
+  padding:12px 24px!important;
+}
+
+/* Colors */

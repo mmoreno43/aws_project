@@ -447,6 +447,10 @@ a{
   opacity:0.75
 }
 
+.padding-large{
+  padding:12px 24px!important
+}
+
 /* Colors */
 
 .w3-brown,.hover-brown:hover{
@@ -487,4 +491,9 @@ a{
 .dark-grey,.hover-dark-grey:hover,.dark-gray,.hover-dark-gray:hover{
   color:#fff!important;
   background-color:#616161!important
+}
+
+.teal{
+  color:#fff!important;
+  background-color:#009688!important
 }

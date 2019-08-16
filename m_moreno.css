@@ -16,9 +16,6 @@
   background-color:#000!important;
 }
 
-
-
-
 .container:after, .container:before{
   content:"";
   display:table;
@@ -47,6 +44,29 @@
   vertical-align:middle;
   overflow:hidden;
   text-decoration:none;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  cursor:not-allowed;
+  opacity:0.3;
+  width:100%;
+  text-align:left;
+  padding:8px 16px;
+  white-space:normal;
+  
+}
+
+.button:hover{
+  color:#000!important;
+  background-color:#ccc!important;
+}
+
+.button:first-child{
+  background-color:#ccc;
+  color:#000;
 }
 
 .block {
@@ -54,7 +74,7 @@
   width:100%;
 }
 
-.hover-blue-grey{
+.hover-blue-grey:hover{
   color:#fff!important;
   background-color:#607d8b!important;
 }
@@ -64,17 +84,17 @@
   padding-bottom:16px!important;
 }
 
-.hover-teal{
+.hover-teal:hover{
   color:#fff!important;
   background-color:#009688!important;
 }
 
-.hover-dark-grey{
+.hover-dark-grey:hover{
   color:#fff!important;
   background-color:#616161!important;
 }
 
-.hover-brown{
+.hover-brown:hover{
   color:#fff!important;
   background-color:#795548!important
 }

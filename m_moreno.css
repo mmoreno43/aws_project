@@ -155,16 +155,15 @@ min-height:750px;
 display:inline-block;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 
 .half{
   float:left;
   width:49.99999%;
-}
-
-div.bottom_middle{
-float:right;
-width:49.99999%;
-flex:25%;
 }
 
 div.box4{                                                                       

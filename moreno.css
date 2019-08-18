@@ -155,16 +155,15 @@ div.box3{
 	min-height:850px;
 }
 
-  
+.column {
+    float: left;
+    width: 33.33%;
+    
+  }
+
 .half{
     float:left;
     width:49.99999%;
-}
-
-div.bottom_middle{
-	float:right
-	width: 49.99999%;
-	flex: 25%;
 }
 
 div.box4{

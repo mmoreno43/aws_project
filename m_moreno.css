@@ -146,17 +146,12 @@ display: flex;
 justify-content: center;
 }
 
-.rotate90{
--webkit-transform: rotate(90deg)!important;
-}
-
-
 div.box3{                                                                        
 width:98.99999%;
 color:#000!important;
 background-color:#f1f1f1!important;
 text-align:center!important;
-min-height:450px;
+min-height:500px;
 display:inline-block;
 }
 

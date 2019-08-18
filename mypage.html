@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9WS69CTP4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -45,22 +44,7 @@
 		 <img class="mySlides" src="imgs/ccon.jpg"   height="325" width="325">
 		 <img class="mySlides" src="imgs/mountains.JPG"   height="335" width="335">
 	  </div>
-	  <script>
-	  var slideIndex = 0;
-      carousel();
-
-      function carousel() {
-		var i;
-		var x = document.getElementsByClassName("mySlides");
-		for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none"; 
-	  }
-	  slideIndex++;
-	  if (slideIndex > x.length) {slideIndex = 1} 
-      x[slideIndex-1].style.display = "block"; 
-      setTimeout(carousel, 2000); 
-}
-</script>
+    <script src="carousel.js"></script>
     </div>
   </div>
 

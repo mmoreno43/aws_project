@@ -6,42 +6,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="moreno.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="m_moreno.css" type="text/css" media="only screen and (max-device-width: 480px)" />
-<body class="content" style= "max-width:1300px" ></body>
 </head>
 
 <div id="wrapper">
-<!-- First Grid: Logo & About -->
-<div class="row">
-  <div class="half black container center style1" >
-    <div class="padding-64">
+  <div class="box1" >
+    <div class="padding">
       <h1>My Page</h1>
-    </div>
-    <div class="padding-64">
-      <a href="#" class="button black block hover-blue-grey padding-16">Home</a>
-      <a href="#work" class="button black block hover-teal padding-16">My Work</a>
-      <a href="#resume" class="button black block hover-dark-grey padding-16">Resume</a>
-      <a href="#contact" class="button black block hover-brown padding-16">Contact</a>
-    </div>
+	   <div class="padding">
+      <a href="#" class="button home hover-blue-grey">Home</a>
+      <a href="#work" class="button work hover-teal">My Work</a>
+      <a href="#resume" class="button resume hover-dark-grey">Resume</a>
+      <a href="#contact" class="button contact hover-brown">Contact</a>
+		</div>
+	</div>
   </div>
-  <div class="half blue-grey container" style="height:850px">
-    <div class="padding-64 center">
+  
+  <div class="box2">
+    <div class="padding">
       <h1>About Me</h1>
-      <img src="https://user-images.githubusercontent.com/53852075/63200625-d40e8880-c036-11e9-8ee2-a24d287ab0c0.png" class="margin circle" width="300" height="300">
-      <div class="left-align padding-large">
-        <p> Hello there, my name is Marcus Moreno and I currently reside in Las Vegas. I currently have my CCNA and AWS Cloud Practitioner and I am currently studying for my AWS Solutions Architect. My IT career is still fresh so my thirst for knowledge is never ending. I built this site mostly because I was bored one day and I wanted to use all the tools I have learned so far and make something out of it. Before  my IT career, I was living in Denver, CO. It was a beautiful place to live and now it’s overcrowded. I left Colorado in July of 2018 leaving my sister, pups, and best friends behind. I currently work for Intellitech Consulting where I do mostly layer 1 and layer 2 gigs, but hoping to move up the ladder. Thanks for coming to site and if you have any questions my info is down below!</p> 
+      <img src="https://user-images.githubusercontent.com/53852075/63200625-d40e8880-c036-11e9-8ee2-a24d287ab0c0.png" alt="Photo of me" class="margin circle" width="300" height="300">
+      <div class="padding-large">
+        <p> Hello there, my name is Marcus Moreno and I currently reside in Las Vegas. I currently have my CCNA and AWS Cloud Practitioner and I am currently studying for my AWS Solutions Architect. My IT career is still fresh so my thirst for knowledge is never ending. I built this site mostly because I was bored one day and I wanted to use all the tools I have learned so far and make something out of it. Before  my IT career, I was living in Denver, CO. It was a beautiful place to live and now it’s overcrowded. I left Colorado in July of 2018 leaving my sister, brother, pups, and best friends behind. I currently work for Intellitech Consulting where I do mostly layer 1 and layer 2 gigs, but hoping to move up the ladder. Thanks for coming to site and if you have any questions my info is down below!</p> 
       </div>
+	  <div class="slides">
+		 <img class="mySlides" src="imgs/family.jpg" height="315" width="315"  >
+		 <img class="mySlides" src="imgs/dogs.jpg"  height="315" width="315" >
+		 <img class="mySlides" src="imgs/friends.jpg"  height="325" width="325" >
+		 <img class="mySlides" src="imgs/ccon.jpg"   height="325" width="325">
+			<img class="mySlides" src="imgs/mountains.jpg"   height="315" width="315" style="transform:rotate(90deg);" >
+	  </div>
+	  <script>
+	  var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none"; 
+	  }
+	  slideIndex++;
+	  if (slideIndex > x.length) {slideIndex = 1} 
+      x[slideIndex-1].style.display = "block"; 
+      setTimeout(carousel, 2000); 
+}
+</script>
     </div>
   </div>
-</div>
 
-<!-- Second Grid: Work & Resume -->
-<div class="row">
-  <div class="half light-grey center" style="min-height:850px" id="work">
-    <div class="padding-64">
+  <div class="box3" id="work">
+    <div class="padding">
       <h2>My Work</h2>
       <p>Some of my latest projects.</p>
     </div> 
-    <div class="row">
       <div class="half">
         <img src="imgs/ghub.png" alt="Github logo" width="150" height="150" usemap="#workmap" >
         <map name="workmap">
@@ -51,15 +68,20 @@
       <div class="half">
         <img src="imgs/glab.png" alt="Gitlab logo" width="150" height="150" usemap="#gitlab" >
         <map name="gitlab">
-          <area shape="rect" coords="0,0,150,150" alt="Gitlab logo" href="https://gitlab.com/marcus_moreno">
+          <area shape="rect" coords="0,0,150,150" alt="Gitlab logo" href="https://gitlab.com/marcus_moreno" target="_blank">
         </map>
       </div>
-  </div>
-</div>
-  <div class="half indigo container" style="min-height:850px" id="resume">
-      <div class="padding-64 center">
+	   <div class="bottom_middle">
+		<img src="imgs/linkedin.png" alt="Linkedin logo" width="150" height="150" usemap="#workmap2" >
+		<map name="workmap2">
+			<area shape="rect" coords="0,0,150,150" alt="logo" href="https://www.linkedin.com/in/marcus-moreno-a97b81144/" target="_blank">
+		</map>
+		</div>
+   </div>
+  
+  <div class="box4" id="resume">
+      <div class="padding">
         <h2>Resume</h2>
-        <div class="container responsive">
           <table class="table">
             <tr>
               <th>Year</th>
@@ -73,12 +95,12 @@
             </tr>
             <tr>
               <td>2019-2022</td>
-              <td>Amazon Web Servcies Cloud Practitioner</td>
+              <td><a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2019-04-25&ci=AWS00811846" target="_blank">Amazon Web Servcies Cloud Practitioner</a></td>
               <td>Las Vegas, Nevada</td>
             </tr>
             <tr class="white">
               <td>2018-2021</td>
-              <td>CCNA</td>
+              <td><a href="https://www.youracclaim.com/badges/378bea92-cd73-474d-ae1d-a9d864f2d251/linked_in_profile" target="blank">CCNA</a></td>
               <td>Las Vegas, Nevada</td>
             </tr>
             <tr>
@@ -87,35 +109,17 @@
               <td>Denver, Colorado</td>
             </tr>
           </table>
-        </div>
       </div>
     </div>
-  </div>
-  
-  
-<!-- Third Grid: Swing By & Contact -->
-<div class="row">
-    <div class="half dark-grey container center" id="contact" style="height:700px">
-      <div class="padding-64">
+	
+    <div class="box5" id="contact">
+      <div class="padding">
         <h1>Contact</h1>
       </div>
-      <div class="padding-64">
         <p>Las Vegas, Nevada</p>
         <p>(303)-956-4146</p>
-        <p>marcusmoreno2343@gmail.com</p>
-      </div>
+        <p><a href="mailto:marcusmoreno2343@gmail.com?" target="_top">marcusmoreno2343@gmail.com</a></p>
     </div>
-    <div class="half teal container center" style="height:700px">
-      <div class="padding-64 padding-large">
-        <h1>Links</h1>
-        <p class="opacity"></p>
-      <img src="https://user-images.githubusercontent.com/53852075/63195689-2bf1c300-c028-11e9-914a-1c63a49149ed.png" alt="Linkedin logo" width="150" height="150" usemap="#workmap2" >
-      <map name="workmap2">
-        <area shape="rect" coords="0,0,150,150" alt="logo" href="https://www.linkedin.com/in/marcus-moreno-a97b81144/">
-      </map>
-      </div>
-    </div>
-  </div>
 </div>
 </body>
 </html>

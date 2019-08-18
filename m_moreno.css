@@ -35,8 +35,7 @@ h1,h2{
   margin:10px 0
 }
 
-div.box1{																										
-float:left;                                                                        
+div.box1{																										                                                                        
 width:98.99999%;
 color:#fff!important;
 background-color:#000!important;
@@ -115,7 +114,6 @@ padding-bottom:16px!important;
 }
 
 div.box2{
-float:right;
 width:98.99999%;
 color:#fff!important;
 background-color:#607d8b!important;
@@ -153,8 +151,7 @@ justify-content: center;
 }
 
 
-div.box3{
-float:left;                                                                        
+div.box3{                                                                        
 width:98.99999%;
 color:#000!important;
 background-color:#f1f1f1!important;
@@ -175,8 +172,7 @@ width:49.99999%;
 flex:25%;
 }
 
-div.box4{
-float:right;                                                                        
+div.box4{                                                                       
 width: 98.99999%;
 color: #fff!important;
 background-color: #009688!important;
@@ -200,8 +196,7 @@ display:inline-block;
   vertical-align:top
 }
 
-div.box5{
-float:left;                                                                        
+div.box5{                                                                      
 width:98.99999%;
 color:#fff!important;
 background-color:#616161!important;

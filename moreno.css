@@ -27,24 +27,8 @@ h1{
 h2{
     font-size:30px
 }
-  
-h3{
-    font-size:24px
-}
-  
-h4{
-    font-size:20px
-}
-  
-h5{
-    font-size:18px
-}
-  
-h6{
-    font-size:16px
-}
     
-h1,h2,h3,h4,h5,h6{
+h1,h2{
     font-family:"Segoe UI",Arial,sans-serif;
     font-weight:400;
     margin:10px 0
@@ -161,10 +145,6 @@ div.slides{
 	display: flex; 
 	justify-content: center;
 }
-
-.rotate90{
-	-webkit-transform: rotate(90deg)!important;
-}
 	
 
 div.box3{
@@ -184,8 +164,8 @@ div.box3{
 
 div.bottom_middle{
 	float:right
-	width:49.99999%;
-	flex:25%;
+	width: 49.99999%;
+	flex: 25%;
 }
 
 div.box4{

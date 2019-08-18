@@ -1,7 +1,7 @@
 #wrapper{
   width: 95%;
   margin-left: auto;
-margin-right: auto;
+  margin-right: auto;
 }
 
 *,*:after{
@@ -15,7 +15,7 @@ line-height:1.5;
 box-sizing:border-box;
 margin-left:auto;
 margin-right:auto;
-max-width:1750px;
+max-width:480px;
 }
 
 

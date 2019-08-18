@@ -1,5 +1,5 @@
 #wrapper{
-  width: 400px;
+  width:99%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -36,7 +36,7 @@ h1,h2{
 
 div.box1{																										
 float:left;                                                                        
-width:99.99999%;
+width:98.99999%;
 color:#fff!important;
 background-color:#000!important;
 padding:17.87px;
@@ -115,7 +115,7 @@ padding-bottom:16px!important;
 
 div.box2{
 float:right;
-  width:49.99999%;
+  width:98.99999%;
 color:#fff!important;
   background-color:#607d8b!important;
 padding:0.01em 16px;
@@ -153,7 +153,7 @@ justify-content: center;
 
 div.box3{
 float:left;                                                                        
-width:99.99999%;
+width:98.99999%;
 color:#000!important;
 background-color:#f1f1f1!important;
 text-align:center!important;
@@ -174,7 +174,7 @@ flex:25%;
 
 div.box4{
 float:right;                                                                        
-width: 99.99999%;
+width: 98.99999%;
 color: #fff!important;
 background-color: #009688!important;
 padding: 0.01em 16px;
@@ -198,7 +198,7 @@ min-height:850px;
 
 div.box5{
 float:none;                                                                        
-width:99.99999%;
+width:98.99999%;
 color:#fff!important;
 background-color:#616161!important;
 padding:0.01em 16px;

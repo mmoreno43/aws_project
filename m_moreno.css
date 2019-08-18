@@ -27,37 +27,21 @@ h1{
 h2{
   font-size:30px
 }
-
-h3{
-  font-size:24px
-}
-
-h4{
-  font-size:20px
-}
-
-h5{
-  font-size:18px
-}
-
-h6{
-  font-size:16px
-}
-  
-h1,h2,h3,h4,h5,h6{
+ 
+h1,h2{
   font-family:"Segoe UI",Arial,sans-serif;
   font-weight:400;
   margin:10px 0
 }
 
 div.box1{																										
-float:none;                                                                        
+float:left;                                                                        
 width:49.99999%;
 color:#fff!important;
 background-color:#000!important;
 padding:17.87px;
 text-align:center!important;
-height:925px;
+height:1050px;
 display:inline-block;
 }
 
@@ -130,7 +114,7 @@ padding-bottom:16px!important;
 }
 
 div.box2{
-float:none;
+float:right;
   width:49.99999%;
 color:#fff!important;
   background-color:#607d8b!important;
@@ -168,7 +152,7 @@ justify-content: center;
 
 
 div.box3{
-float:none;                                                                        
+float:left;                                                                        
 width:49.99999%;
   color:#000!important;
   background-color:#f1f1f1!important;
@@ -189,7 +173,7 @@ flex:25%;
 }
 
 div.box4{
-float:none;                                                                        
+float:right                                                                        
 width:49.99999%;
 color:#fff!important;
   background-color:#009688!important;

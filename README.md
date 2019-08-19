@@ -45,7 +45,7 @@ Let's check to see if the keys are there by running the following:
 ls -la .ssh/
 ```
 
-![image](https://github.com/mmoreno43/aws_project/raw/master/imgs/ssh_key_check.png)
+![image](imgs/ ssh_key_check.png)
 
 
 # Configuring GitHub

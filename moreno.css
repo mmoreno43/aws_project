@@ -152,18 +152,25 @@ div.box3{
     color:#000!important;
     background-color:#f1f1f1!important;
 	text-align:center!important;
-	min-height:850px;
+    min-height:870px;
+    
 }
 
 .column {
     float: left;
     width: 33.33%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 .half{
     float:left;
     width:49.99999%;
 }
+
+a:link {
+    text-decoration: none;
+  }
 
 div.box4{
 	float:left;                                                                        
@@ -172,7 +179,7 @@ div.box4{
     background-color:#009688!important;
 	padding:0.01em 16px;
 	text-align:center!important;
-	min-height:850px;
+    min-height:850px;
 }
 
 .table{
@@ -187,6 +194,10 @@ div.box4{
     display:table-cell;
     text-align:left;
     vertical-align:top
+}
+
+.skills{
+    text-align: left;
 }
 
 div.box5{

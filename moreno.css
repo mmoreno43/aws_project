@@ -113,6 +113,11 @@ div.box1{
 	 	
 }
 
+div.project_content{
+    margin-left: auto;
+    margin-right: auto;
+}
+
  div.box2{
 	float:left;
     width:49.99999%;
@@ -131,7 +136,7 @@ div.box1{
     border-radius:50%
 }
 
-.padding{
+.project{
     padding-top:64px!important;
     padding-bottom:64px!important
 }

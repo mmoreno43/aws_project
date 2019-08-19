@@ -26,7 +26,11 @@
       <a href="#work" class="button work hover-teal">My Work</a>
       <a href="#resume" class="button resume hover-dark-grey">Resume</a>
       <a href="#contact" class="button contact hover-brown">Contact</a>
-		</div>
+    </div>
+    <h2>About this project</h2>
+      <p>
+        This site is not just an HTML code I created to show off who I am. It is MUCH more than that. I wanted to take everything I had learned within the past few weeks and make something out of it. This site is statically hosted on an S3 bucket in AWS. Eventually, the goal is to move it from S3 to a web server. Within my AWS, I have registered a custom domain to serve my Amazon S3 content. By, default a bucket name is extremely long and I would never remember it. The content within the bucket comes from Travis CI. I had to create a Node.js file that copies my Git master branch and puts the contents into my S3 bucket. My .js file has programmatic access to log into my AWS and perform the move into my bucket. The files come from my laptop where I push the contents to my Git repository. 30 seconds later I see the changes made to my website. As I continue to work through the project, I will add more features. One of them being able to click on the links in this box and having the box slide up to take the place next to "About Me" rather than scrolling me down to that specific box. Another is being able to use Google Analytics to track users coming to my site which causes the site to move from S3 and onto a web server. You can find more about this project <a href="https://github.com/mmoreno43/aws_project">here</a> .
+      </p>
 	</div>
   </div>
   
@@ -35,7 +39,7 @@
       <h1>About Me</h1>
       <img src="imgs/me.JPG" alt="Photo of me" class="margin circle" width="300" height="300">
       <div class="padding-large">
-        <p> Hello there, my name is Marcus Moreno and I currently reside in Las Vegas. I currently have my CCNA and AWS Cloud Practitioner and I am currently studying for my AWS Solutions Architect. My IT career is still fresh so my thirst for knowledge is never ending. I built this site mostly because I was bored one day and I wanted to use all the tools I have learned so far and make something out of it. Before  my IT career, I was living in Denver, CO. It was a beautiful place to live and now it’s overcrowded. I left Colorado in July of 2018 leaving my sister, brother, pups, and best friends behind. I currently work for Intellitech Consulting where I do mostly layer 1 and layer 2 gigs, but hoping to move up the ladder. Thanks for coming to my site and if you have any questions my info is down below!</p> 
+        <p> Hello there, my name is Marcus Moreno and I currently reside in Las Vegas. I currently have my CCNA and AWS Cloud Practitioner and I am currently studying for my AWS Solutions Architect and maybe my CCNP after that. My IT career is still fresh so my thirst for knowledge is never ending. Before my IT career, I was living in Denver, CO. It was a beautiful place to live and now it’s overcrowded. I left Colorado in July of 2018 leaving my sister, brother, pups, and best friends behind. It was definitely a hard change for all of us, but we all knew it would be a positive for me. I currently work for Intellitech Consulting where I do mostly layer 1 and layer 2 gigs, but hoping to move up the ladder. Thanks for coming to my site and if you have any questions my info is down below!</p> 
       </div>
 	  <div class="slides">
 		 <img class="mySlides" src="imgs/family.jpg" height="315" width="315"  >
@@ -56,7 +60,7 @@
       <div class="column">
         <img src="imgs/ghub.png" alt="Github logo" width="150" height="150" usemap="#workmap" >
         <map name="workmap">
-          <area shape="rect" coords="0,0,150,150" alt="Github logo" href="https://github.com/mmoreno43">
+          <area shape="rect" coords="0,0,150,150" alt="Github logo" href="https://github.com/mmoreno43" target="_blank">
         </map>
       </div>
       <div class="column">
@@ -89,16 +93,16 @@
             </tr>
             <tr>
               <td>2019 - 2022</td>
-              <td><a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2019-04-25&ci=AWS00811846" target="_blank">Amazon Web Servcies Cloud Practitioner</a></td>
+              <td><a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2019-04-25&ci=AWS00811846" target="_blank">Amazon Web Services Cloud Practitioner</a></td>
               <td>Las Vegas, Nevada</td>
             </tr>
             <tr class="white">
               <td>2018 - 2021</td>
-              <td><a href="https://www.youracclaim.com/badges/378bea92-cd73-474d-ae1d-a9d864f2d251/linked_in_profile" target="blank">CCNA</a></td>
+              <td><a href="https://www.youracclaim.com/badges/378bea92-cd73-474d-ae1d-a9d864f2d251/linked_in_profile" target="_blank">CCNA</a></td>
               <td>Las Vegas, Nevada</td>
             </tr>
             <tr>
-                <td>Feb 2017 - Sep 2016</td>
+                <td>Feb 2017 - Sep 2018</td>
                 <td>Line Associate</td>
                 <td>Denver, Colorado</td>
               </tr>
@@ -113,7 +117,24 @@
               <td>Denver, Colorado</td>
             </tr>
           </table>
-      </div>
+        </div>
+        <div class=skills>
+          <h2>Skills</h2>
+              <ul>
+                  <li>Web Development</li>
+              </ul>  
+          <h2>Languages</h2> 
+              <ul>
+                <li>Linux</li>
+                <li>Node.js</li>
+              </ul>
+            <h2>Automation/Programming</h2>
+              <ul>
+                <li>Travis CI</li>
+                <li>SCM <a href="https://github.com/mmoreno43" target="_blank">Github</a> & <a href="https://gitlab.com/marcus_moreno" target="_blank">Gitlab</a></li>
+             </ul>
+        </div>
+      
     </div>
 	
     <div class="box5" id="contact">

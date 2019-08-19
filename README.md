@@ -45,7 +45,7 @@ Let's check to see if the keys are there by running the following:
 ls -la .ssh/
 ```
 
-![image](imgs/ssh_key_check.png)
+![image](imgs/ssh_key_check.PNG)
 
 
 # Configuring GitHub
@@ -296,7 +296,7 @@ Choose **Static website hosting**.
 
 Choose **Redirect requests**. In the **Target bucket or domain** box, type example.com.
 
-![image](imgs/S3_redirect.png)
+![image](imgs/S3_redirect.PNG)
 
 Click **Save**.
 
@@ -348,7 +348,7 @@ Choose **Create**.
 
 For www.example.com, repeat steps 3 through 5 to create a record.
 
-![image](imgs/hosted_zones)
+![image](imgs/hosted_zones.PNG)
 
 If done correctly, you should be able to type the your domain name into your browser and you should see your website.
 
@@ -546,7 +546,7 @@ Value: will be your secret access key in your .csv file
 
 Branch: Master
 ```
-![image](Travis_CI.png)
+![image](Travis_CI.PNG)
 
 ## Prep for Final Push
 

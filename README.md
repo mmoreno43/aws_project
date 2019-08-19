@@ -7,6 +7,8 @@ Suppose that you want to host your static website on Amazon S3. You registered a
 
 Why S3? S3 is a great tool on AWS where not only is it being used for storage, but hosting static sites. With static sites people can host websites to present their portfolio, blogs, anything they want. Since it is inexpensive and an amazing tool. 
 
+![image](imgs/flow_chart.png)
+
 ## Before you Begin
 
 As you follow the steps in this example, you will work with the following services:

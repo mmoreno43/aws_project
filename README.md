@@ -219,7 +219,7 @@ Once logged into AWS console we will click on the **Services** tab and click on 
 
 Next, we will click **Create Bucket**. 
 
-![image](imgs/s3_bucket_creation.PNG)
+![image](imgs/s3_bucket_creation.png)
 
 On the bucket **Name and region page**, type the name of your domain name and click **Create**.
 
@@ -296,7 +296,7 @@ Choose **Static website hosting**.
 
 Choose **Redirect requests**. In the **Target bucket or domain** box, type example.com.
 
-![image](imgs/S3_redirect.PNG)
+![image](imgs/S3_redirect.png)
 
 Click **Save**.
 
@@ -348,7 +348,7 @@ Choose **Create**.
 
 For www.example.com, repeat steps 3 through 5 to create a record.
 
-![image](imgs/hosted_zones.PNG)
+![image](imgs/hosted_zones.png)
 
 If done correctly, you should be able to type the your domain name into your browser and you should see your website.
 
@@ -546,7 +546,7 @@ Value: will be your secret access key in your .csv file
 
 Branch: Master
 ```
-![image](Travis_CI.png)
+![image](imgs/Travis_CI.png)
 
 ## Prep for Final Push
 

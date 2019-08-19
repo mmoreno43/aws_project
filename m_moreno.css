@@ -42,7 +42,7 @@ background-color:#000!important;
 padding:17.87px;
 text-align:center!important;
 height: 1500px;
-display:inline-block;
+display: inline-block;
 overflow-y: scroll;
 }
 
@@ -132,7 +132,7 @@ display:inline-block;
   border-radius:50%
 }
 
-.padding{
+.project{
   padding-top:64px!important;
   padding-bottom:64px!important
 }

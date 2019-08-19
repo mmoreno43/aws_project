@@ -45,7 +45,7 @@ Let's check to see if the keys are there by running the following:
 ls -la .ssh/
 ```
 
-![image](imgs/ssh_key_check.PNG)
+![image](imgs/ssh_key_check.png)
 
 
 # Configuring GitHub
@@ -219,7 +219,7 @@ Once logged into AWS console we will click on the **Services** tab and click on 
 
 Next, we will click **Create Bucket**. 
 
-![image](imgs/s3_bucket_creation.png)
+![image](imgs/s3_bucket_creation.PNG)
 
 On the bucket **Name and region page**, type the name of your domain name and click **Create**.
 
@@ -278,7 +278,7 @@ Choose **Properties**.
 
 Choose **Static website hosting**
 
-![image](static_web_hosting.PNG)
+![image](imgs/static_web_hosting.PNG)
 
 Configure the **example.com** bucket for website hosting. In the **Index Document** box, type the name that you gave your index page. This is the name we created in our aws_project which should be **index.html**. 
 
@@ -304,9 +304,9 @@ Click **Save**.
 
 In this step, you create the alias records that you add to the hosted zone for your domain maps example.com and www.example.com to the corresponding S3 buckets. Instead of using IP addresses, the alias records use the Amazon S3 website endpoints. Amazon Route 53 maintains a mapping between the alias records and the IP addresses where the Amazon S3 buckets reside.
 
-![image](imgs/route_53.PNG)
-
 Open the [Route 53 console](https://console.aws.amazon.com/route53/).
+
+![image](imgs/route_53_dashboard.PNG)
 
 In the list of **hosted zones**, choose the name of your domain.
 
@@ -546,7 +546,7 @@ Value: will be your secret access key in your .csv file
 
 Branch: Master
 ```
-![image](Travis_CI.PNG)
+![image](Travis_CI.png)
 
 ## Prep for Final Push
 
